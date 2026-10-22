@@ -10,7 +10,7 @@
 
 ## 🎯 Qué se pedía
 
-(Dos o tres líneas con tus palabras: qué había que conseguir.)
+(.)
 
 ## ⌨️ Comandos y pasos importantes
 
