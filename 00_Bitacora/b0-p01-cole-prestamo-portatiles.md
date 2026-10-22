@@ -10,20 +10,54 @@
 
 ## 🎯 Qué se pedía
 
-hacer una pagina web simple y subirla a github tambien crear repositorios y hacer push
+Crear desde cero una bóveda en Obsidian  con su estructura de carpetas, un proyecto web de préstamo de portátiles y un repositorio Git conectado por SSH. Había que guardar tres versiones además de grabar todo el proceso en pantalla con marcas de tiempo y completar la bitácora.
 
 ## ⌨️ Comandos y pasos importantes
 
-- `comando` — pwd git remote -v git status Qué significa cada línea: Línea Significado 1 Muestra la carpeta actual. 2 Muestra las direcciones de origin. 3 Identifica los cambios pendientes; debe aparecer la bitácora modificada.
+- `comando` —
+- `git --version`, `git config`, `ssh -T git@github.com` — para comprobar la disponibilidad de Git, la identidad del autor y la autenticación SSH.
+
+- `pwd` — para verificar que nos encontramos en la ruta exacta del proyecto (`01_Proyecto`) antes de inicializar Git.
+    
+- `git init` y `git branch -M main` — para inicializar el repositorio local y establecer la rama principal como `main`.
+    
+- `git remote add origin <url>` y `git remote -v` — para registrar y verificar la dirección remota de GitHub.
+    
+- `git status` — para comprobar el estado de los archivos (sin seguimiento, modificados o preparados).
+    
+
+    
+- `git add <ruta>` — para preparar los cambios específicos que formarán parte del siguiente commit.
+
+- `git diff` y `git diff --cached` — para comparar los cambios realizados en los archivos respecto al índice o al último commit.
+    
+
+
+- `git commit -m "mensaje"` — para guardar localmente una versión con los cambios preparados y una descripción.
+    
+    
+
+- `git push` — para subir los commits locales al repositorio remoto en GitHub.
+
+    
+
+- `git check-ignore -v` — para comprobar qué regla del `.gitignore` está excluyendo los archivos de vídeo.
+    
+- `git log --oneline` — para consultar el historial de versiones con códigos abreviados.
+    
+- `git switch --detach <codigo>` y `git switch main` — para viajar temporalmente a un commit anterior y regresar a la rama principal..
 
 ## 🛠️ Qué he hecho
 
-(Los pasos que has seguido. No copies el enunciado: cuenta lo que hiciste tú.)
+- Primero comprobé que las herramientas funcionaban bien, creé la carpeta del proyecto con su estructura, configuré los bloqueos para los vídeos y dejé lista la primera página web.
 
+- Después activé el control de versiones, lo conecté con el repositorio en internet y guardé la primera versión y la segunda modificación del estado del equipo.
+
+- Más adelante añadí las páginas nuevas, una imagen y los enlaces correspondientes, revisando que todo estuviera en orden para guardar la tercera versión.
+
+- Por último, comprobé el historial para ver que podía moverme entre la versión antigua y la actual sin problemas, grabé la pantalla, añadí el enlace del vídeo en la bitácora y subí el cierre final.
 ## 🚩 Qué me ha fallado y cómo lo he resuelto
-
-(El mensaje de error LITERAL y qué hiciste. Si no falló nada, escribe "nada"
-— pero piénsalo dos veces antes.)
+En un apartado no se copiaban los comandos hasta que descargué el PDF con la ayuda de Pedro. Además, en otro caso no me funcionaba el `cd` y tuve que revisar la extensión porque había un doble ".md"
 
 ## 🤔 Respuestas a las preguntas
 
@@ -85,8 +119,8 @@ Repetiría los pasos necesarios para guardar el nuevo cambio:
 ## 🔗 Enlaces
 
 - **Vídeo de esta fase:**  https://youtu.be/BQ9FGuoQrPs?si=AQHeqHx5zR0SvVCv
-- **Playlist:** 
+- **Playlist:** https://www.youtube.com/playlist?list=PLQ0xCUR65674
 
 ## 💭 Dudas / a repasar
 
-- (lo que no te ha quedado claro)
+La verdad es que nada, todo está bien explicado. Las únicas dudas que me surgieron las resolví en clase.
